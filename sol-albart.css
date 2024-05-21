@@ -891,8 +891,74 @@ h1{
 	}
 }
 
+.partner{
+	margin: 2em 0;
+	max-width: 100%;
+	width: 100%;
+	overflow: hidden;
+	-webkit-mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
+}
 
+.partner > div{
+	width: max-content;
+	padding: 1em 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 3em;
+	list-style: none;
+}
 
+.partner img{
+	max-width: 20em;
+}
 
+@keyframes move{
+	to{
+		transform: ;
+			translate: calc(-50% - 1.5em);
+	}
+}
 
+footer{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2em;
+}
 
+footer li{
+	margin: 1em 0;
+}
+
+footer li a{
+	color: #ccc;
+	font-size: 1.3em;
+}
+
+footer li a:hover{
+	text-decoration: underline;
+}
+
+footer input{
+	background: #1b2039;
+	border: none;
+	padding: 0.7em;
+	border-radius: 5px;
+}
+
+footer hr{
+	border: 1px #008000 solid;
+	margin: 1.5em 0;
+}
+
+footer p{
+	margin: 1em 0;
+}
+
+.banner{
+	max-width: 55%;
+}
+.btn{
+	font-size: 0.8em;
+}

@@ -46,3 +46,18 @@ const populateUl = () => {
 };
 
 populateUl();
+
+
+const infipa = document.querySelectorAll(".partner");
+
+infipa.forEach(infi => {
+	const infipar = infi.querySelector(".partner div");
+
+	const infipacon = Array.from(infipar.childern);
+
+	infipacon.forEach(item => {
+		const duplicatedItem = item.cloneNode(true);
+		infipar.appendChild(duplicatedItem);
+		infipar.style.animation = "move 12s linear infinite";
+	});
+});
