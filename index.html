@@ -41,7 +41,8 @@
         </nav>
         <div class="welcome">
           <div class="twhwelcome">
-            <span>READY</span>
+            <span>READY,</span>
+            <span>SET,</span>
             <span>GOAL</span>
             <span>IS</span>
             <span>COMING</span>
@@ -58,7 +59,7 @@
       <div class="mainpanel">
         <div class="inner-panel">
           <h5>WELCOME TO EURO 2024</h5>
-          <p1>Albart, the official mascot of Euro 2024, is a cute and enthusiastic panda, bringing joy and excitement to Europe's largest football tournament. To make Albart even more famous, we're harnessing the power of cryptocurrency and blockchain technology. Through digital promotion campaigns and interactive experiences on the blockchain platform, fans can engage in unique activities and earn rewards in cryptocurrency. This innovative approach connects the global fan community and turns Albart into a true icon of the digital age.</p1>
+          <p1>Albart, the official mascot of Euro 2024, is a cute and enthusiastic panda, bringing joy and excitement to Europe's largest football tournament. To make Albart even more famous, we're harnessing the power of cryptocurrency and blockchain technology. Through digital promotions, campaigns and interactive experiences on the blockchain platform, fans can engage in unique activities and earn rewards in cryptocurrency. This innovative approach connects the global fan community and turns Albart into a true icon of the digital age.</p1>
         </div>
         <div class="title-panel1">
           <h>Let's scream together!!!</h>
@@ -73,8 +74,36 @@
       </div>
     </section>
 
+    <section id="tokenomics" class="tokenomics">
+      <div class="main-token">
+        <div class="inner-token">
+          <h1>TOKENNOMICS</h1>
+          <p1>$ALBART is a memecoin that belongs to the community and is driven by the community! Let's contribute and make it awesome!</p1>
+        </div>
+        <div class="contract">
+          <img id="contractImg" onclick="copyText(event)" src="contract.png" width="500px" height="100px" style="object-fit: contain; max-width: 100%;">
+          <p1>Token Verify, Audited, No mint, Team No Token</p1>
+        </div>
+      </div>
+      <div class="side-token">
+        <div class="programming-stats">
+          <div class="chart-container">
+            <canvas class="my-chart" width="600" height="600" style="display: block; box-sizing: border-box; height: 300px; width: 300;"></canvas>
+          </div>
+          <div class="details">
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <div class="ig-token">
+          <img src="2.png" width="500px" height="auto" style="object-fit: contain; max-width: 100%;">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="sol-albart.js"></script>
-    <script>   
+   <!-- <script>   
     document.addEventListener('DOMContentLoaded', function () {
     var contentToCopy = document.getElementById('contentToCopy');
     var copyIcon = document.getElementById('copyIcon');
@@ -93,7 +122,33 @@
         document.body.removeChild(tempTextArea);
       });
     });
-  </script>
+  </script> -->
+  <script>
+function copyText(event) {
+    var textToCopy = "The contract will be released soon!";
+
+    var textarea = document.createElement("textarea");
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+
+    textarea.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(textarea);
+
+    var alertDiv = document.createElement("div");
+    alertDiv.className = "copy-alert";
+    alertDiv.textContent = "Copied: " + textToCopy;
+    alertDiv.style.top = (event.clientY + window.scrollY) + "px";
+    alertDiv.style.left = (event.clientX + window.scrollX) + "px";
+    document.body.appendChild(alertDiv);
+
+    setTimeout(function() {
+        document.body.removeChild(alertDiv);
+    }, 1000); 
+}
+
+</script>
   </body>
 </html>
 

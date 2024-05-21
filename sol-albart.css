@@ -94,7 +94,7 @@ ul{
 }
 
 section, footer{
-	margin: 5em 0;
+	margin: 3em 0;
 }
 
 header{
@@ -485,7 +485,6 @@ h1{
 .gridmix{
 	padding: 1em;
 	min-height: 100vh;
-	max-height: 100vh;
 }
 
 .grid > div{
@@ -520,7 +519,7 @@ h1{
     display: block;
     color: #fff;
     text-shadow: 0 0 10px #FF4500, 0 0 20px #FFD700, 0 0 30px #FF4500;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
 .inner-panel h5 {
@@ -529,7 +528,7 @@ h1{
     display: block;
     color: #fff;
     text-shadow: 0 0 20px #00FF00, 0 0 30px #FFFFFF, 0 0 40px #00FF00;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
 
@@ -696,18 +695,201 @@ h1{
 }
 
 
+.tokenomics{
+	font-family: "Protest Guerrilla", sans-serif;
+	color: #fff;
+	padding: 2em;
+    min-height: 100vh;
+    background-image: url('football.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-token{
+
+}
+.inner-token{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.inner-token h1{
+	font-size: 10vw;
+	text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+}
+.inner-token p1{
+	display: flex;
+	align-items: center;
+	margin-top: 0;
+	color: #000;
+	font-size: 20px;
+	text-shadow: 
+    1px 1px 0 #fff, 
+    -1px -1px 0 #fff, 
+    1px -1px 0 #fff, 
+    -1px 1px 0 #fff;
+}
+
+.contract{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.contract p1{
+	text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.side-token{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.programming-stats {
+    font-family: "Protest Guerrilla", sans-serif;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin: 0 auto;
+    width: fit-content;
+    height: 500px;
+    /*box-shadow: 0px 4px 20px -2px orange;
+    border-radius: 20px;
+    padding: 10px 32px;
+    color: orange;
+    transition: all 400ms ease;*/
+}
+
+.programming-stats .details ul li {
+    font-size: 1em;
+    margin: 12px 0;
+    text-transform: uppercase;
+}
+
+.chart-container {
+    width: 100%;
+}
+
+.programming-stats {
+	color: orange;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: fit-content;
+    height: 500px;
+    /*box-shadow: 0px 4px 20px -2px orange;
+    border-radius: 20px;
+    padding: 10px 32px;
+    color: orange;
+    transition: all 400ms ease;*/
+}
+
+/*.programming-stats:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 24px -7px #2AC8BF;
+}*/
+.programming-stats .details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programming-stats .details ul li {
+    font-size: 1.3em;
+    margin: 12px 0;
+    text-transform: uppercase;
+} 
+
+.programming-stats .details .percentage {
+    font-weight: 700;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 425px){
+ 	.chart-heading {
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+	    font-family: "Protest Guerrilla", sans-serif;
+	    text-shadow: 
+		    1px 1px 0 #000, 
+		    -1px -1px 0 #000, 
+		    1px -1px 0 #000, 
+		    -1px 1px 0 #000;
+	    background: linear-gradient(180deg, orange, #2AC8BF); 
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    font-size: 3.2em;
+	    text-align: center;
+	    margin-top:5%;
+	}
+	.programming-stats {
+	    font-family: "Protest Guerrilla", sans-serif;
+	    text-shadow: 
+		    1px 1px 0 #000, 
+		    -1px -1px 0 #000, 
+		    1px -1px 0 #000, 
+		    -1px 1px 0 #000;
+	    display: block;
+	    align-items: center;
+	    justify-content: center;
+	    gap: 20px;
+	    margin: 0 auto;
+	    width: fit-content;
+	    height: 450px;
+	}
+
+}
+
+.copy-alert {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 9999;
+}
 
 
 
 
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1080px){
+	.side-token{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
 
 
 
